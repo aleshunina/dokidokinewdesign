@@ -24,9 +24,9 @@
                 background-color: #e9e9e9;
                 background-size: cover;
             }
-            .main-container{
+            /* .main-container{
                 width:80%;
-            }
+            } */
 
             .fill-Img {
                 display: flex;
@@ -61,14 +61,20 @@
             }
             .next-assembly{
                 background-color: #F4F4F4;
-                border-radius: 15px;
-                width: 40%;
-                
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px ;
             }
 
             .next-assembly-img{
-                border-top-left-radius: 15px;
-                border-bottom-left-radius: 15px ;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px ;
+            }
+
+            @media (max-width: 420px){
+                .next-assembly {
+                    border-radius: 15px;
+                    width: 90%;
+                }
             }
 
             .next-assembly-body{
@@ -82,7 +88,7 @@
         </style>
     </head>
 <body>
-    <div class="container-fluid main-container">
+    <div class="container main-container">
         <div class="row">
             <div class="col">
                 <div class="m-3 w-25">
@@ -96,21 +102,17 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <div class="d-flex next-assembly flex-wrap">
-                    <div class="">
-                        <img class="next-assembly-img img-fluid flex-fill" src="https://image.tmdb.org/t/p/w185/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg">
-                    </div>
-                    <div class="m-3 next-assembly-body flex-column align-self-center flex-fill">
-                        <div class="d-flex justify-content-end fs-4">Следующее собрание</div>
-                        <div class="my-2 d-flex justify-content-end fs-3">Луна 2112</div>
-                        <div class="mb-3 d-flex justify-content-end fs-5">Фильм датского режиссера Томаса Винтерберга 2020 года</div>
-                        <div class="d-flex">Куратор: director_interneta</div>
-                        <div>Дата: 20.21.1234</div>
-                        <div>Участники: Baugl1r, Amanita, HarpiB, director_interneta, Baugl1r, Amanita, HarpiB, director_interneta</div>
-                    </div>
-                </div>
+        <div class="row justify-content-center mb-3">
+            <div class="col-xs-12 col-md-5 col-lg-4 offset-lg-3 offset-md-2 next-assembly">
+                <div class="d-flex justify-content-end fs-4">Следующее собрание</div>
+                <div class="my-2 d-flex justify-content-end fs-3">Луна 2112</div>
+                <div class="mb-3 d-flex justify-content-end fs-5">Фильм датского режиссера Томаса Винтерберга 2020 года</div>
+                <div class="d-flex">Куратор: director_interneta</div>
+                <div>Дата: 20.21.1234</div>
+                <div class="mb-2 d-flex">Участники: Baugl1r, Amanita, HarpiB, director_interneta, Baugl1r, Amanita, HarpiB, director_interneta</div>
+            </div>
+            <div class="col-xs-12 col-md-5 g-0 d-none d-sm-block">
+                <img class="next-assembly-img img-fluid" src="https://image.tmdb.org/t/p/w185/35IU0Mq0zFsN1mYwDGts5mKc77n.jpg">
             </div>
         </div>
         <div class="row">
