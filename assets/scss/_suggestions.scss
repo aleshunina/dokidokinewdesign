@@ -1,0 +1,29 @@
+.suggestions {
+      &__img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position:relative;
+            border-radius: $mainBorderRadius;
+            &:hover .suggestions__body-hidden {
+                  opacity: 0.85;
+            }
+            &:hover .suggestions__img {
+                  transform: scale(1.03, 1.03);
+                  transition: transform .5s ease-out 20ms;
+            }
+            &__body-hidden {
+                  height: 100%;
+                  width: 100%;
+                  position: absolute;
+                  opacity: 0;
+                  background-color: white;
+                  transition: opacity .5s ease-out 20ms;
+                  padding-top: 50%;
+            }
+            &__img {
+                  transition: transform 450ms;
+            }
+      }
+}
