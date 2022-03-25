@@ -1,11 +1,13 @@
+@use '../scss/variables';
+
 .suggestions {
-      &__img-container {
+      &__container {
             display: flex;
             justify-content: center;
             align-items: center;
             overflow: hidden;
             position:relative;
-            border-radius: $mainBorderRadius;
+            border-radius: variables.$mainBorderRadius;
             &:hover .suggestions__body-hidden {
                   opacity: 0.85;
             }
@@ -13,7 +15,7 @@
                   transform: scale(1.03, 1.03);
                   transition: transform .5s ease-out 20ms;
             }
-            &__body-hidden {
+            .suggestions__body-hidden {
                   height: 100%;
                   width: 100%;
                   position: absolute;
@@ -22,7 +24,7 @@
                   transition: opacity .5s ease-out 20ms;
                   padding-top: 50%;
             }
-            &__img {
+            .suggestions__img {
                   transition: transform 450ms;
             }
       }

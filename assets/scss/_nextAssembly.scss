@@ -1,20 +1,22 @@
+@use '../scss/variables';
+
 .next-assembly {
       &__body {
             background-color: #F4F4F4;
-            border-top-left-radius: $mainBorderRadius;
-            border-bottom-left-radius: $mainBorderRadius;
+            border-top-left-radius: variables.$mainBorderRadius;
+            border-bottom-left-radius: variables.$mainBorderRadius;
             /* box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
             clip-path: inset( -100px 00px -100px -100px); */
             @media (max-width: 420px) {
-                      border-radius: $mainBorderRadius;
+                      border-radius: variables.$mainBorderRadius;
                       width: 90%;
               }
       }
       &__img {
             object-fit: cover;
             min-height: 100%;
-            border-top-right-radius: $mainBorderRadius;
-            border-bottom-right-radius: $mainBorderRadius;
+            border-top-right-radius: variables.$mainBorderRadius;
+            border-bottom-right-radius: variables.$mainBorderRadius;
             /* box-shadow:  0rem 1rem 3rem rgba(black, .175); */
             /* clip-path: inset( -100px -100px -100px 0px);
             box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); */
