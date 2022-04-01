@@ -1,0 +1,9 @@
+@use '../scss/variables';
+@use '../scss/nextAssembly';
+
+.create-assembly {
+      &__body {
+            @extend .next-assembly__body;
+            border-radius: variables.$mainBorderRadius;
+      }
+}

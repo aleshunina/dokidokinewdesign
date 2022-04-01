@@ -36,15 +36,13 @@ body.dark-theme {
   transition: transform 450ms;
 }
 
-.next-assembly__body, body.dark-theme .next-assembly__body {
+.next-assembly__body, .create-assembly__body, body.dark-theme .next-assembly__body, body.dark-theme .create-assembly__body {
   background-color: #F4F4F4;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  /* box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
-  clip-path: inset( -100px 00px -100px -100px); */
 }
 @media (max-width: 420px) {
-  .next-assembly__body, body.dark-theme .next-assembly__body {
+  .next-assembly__body, .create-assembly__body, body.dark-theme .next-assembly__body, body.dark-theme .create-assembly__body {
     border-radius: 15px;
     width: 90%;
   }
@@ -54,14 +52,15 @@ body.dark-theme {
   min-height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  /* box-shadow:  0rem 1rem 3rem rgba(black, .175); */
-  /* clip-path: inset( -100px -100px -100px 0px);
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); */
 }
 
-body.dark-theme .next-assembly__body {
+body.dark-theme .next-assembly__body, body.dark-theme .create-assembly__body {
   background-color: #494d50;
   color: #bebebe;
+}
+
+.create-assembly__body {
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
