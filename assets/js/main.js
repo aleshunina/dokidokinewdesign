@@ -11,15 +11,16 @@ const searchFilmField = document.getElementById('searchFilmField');
 const saveNewAssemblyBtn = document.getElementById('saveNewAssemblyBtn');
 
 $(document).ready(function(){
-    $("#createBtn").click(function(){
-        $(".main-panel__next-assembly").fadeOut();
-        $(".main-panel__create-assembly").fadeIn();
+    $("#createBtn").click(function() {
+        $(".main-panel__next-assembly").fadeOut("normal", function() {
+            $(".main-panel__create-assembly").fadeIn("normal");
+        });
     });
 });
 
-$(document).ready(function(){
-    $(".main-panel__create-assembly").fadeOut();
-});
+logo.addEventListener('click', function() {
+    window.location.reload();
+})
 
 function toggleStyle(element, attrib, darkStyle, lightStyle) {
    console.log(element+" entered")
