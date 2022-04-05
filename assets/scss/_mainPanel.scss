@@ -1,10 +1,12 @@
 @use '../scss/variables';
 
-.next-assembly {
+.main-panel {
       &__body {
             background-color: #F4F4F4;
             border-top-left-radius: variables.$mainBorderRadius;
             border-bottom-left-radius: variables.$mainBorderRadius;
+            /* box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
+            clip-path: inset( -100px 00px -100px -100px); */
             @media (max-width: 420px) {
                       border-radius: variables.$mainBorderRadius;
                       width: 90%;
@@ -15,11 +17,14 @@
             min-height: 100%;
             border-top-right-radius: variables.$mainBorderRadius;
             border-bottom-right-radius: variables.$mainBorderRadius;
+            /* box-shadow:  0rem 1rem 3rem rgba(black, .175); */
+            /* clip-path: inset( -100px -100px -100px 0px);
+            box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); */
       }
 }
 
-body.dark-theme .next-assembly__body {
-      @extend .next-assembly__body;
-      background-color: #494d50     ;
+body.dark-theme .main-panel__body {
+      @extend .main-panel__body;
+      background-color: #494d50;
       color: rgb(190, 190, 190);
 }
