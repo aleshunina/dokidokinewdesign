@@ -9,13 +9,24 @@ const selectSuggestionBtn = document.getElementById('selectSuggestionBtn');
 const createBtn = document.getElementById('createBtn');
 const searchFilmField = document.getElementById('searchFilmField');
 const saveNewAssemblyBtn = document.getElementById('saveNewAssemblyBtn');
+const filmImg = document.getElementById('filmImg');
+const searchResult = document.getElementsByClassName('search-results');
 
 $(document).ready(function(){
     $("#createBtn").click(function() {
+        $(".main-panel__img").fadeOut("normal", function() {
+            filmImg.src = '/assets/img/no_film_img.png';
+            $(".main-panel__img").fadeIn("normal");
+        });
+
         $(".main-panel__next-assembly").fadeOut("normal", function() {
             $(".main-panel__create-assembly").fadeIn("normal");
         });
     });
+
+    $("#searchFilmField").on("input", function() {
+        $(".search-results").fadeIn("normal");
+    })
 });
 
 logo.addEventListener('click', function() {
@@ -23,7 +34,6 @@ logo.addEventListener('click', function() {
 })
 
 function toggleStyle(element, attrib, darkStyle, lightStyle) {
-   console.log(element+" entered")
     if (element.style[attrib] === null) {
         element.style[attrib] = darkStyle;
     }
@@ -74,3 +84,8 @@ btn.addEventListener('click', function() {
     setFullDarkTheme();
     toggleLocalStorageTheme();
 })
+
+// searchFilmField.addEventListener('input', function() {
+//     console.log(searchResult.style)
+//     searchResult.style.display = "inline"
+// })

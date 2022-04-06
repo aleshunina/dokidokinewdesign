@@ -21,6 +21,15 @@
             /* clip-path: inset( -100px -100px -100px 0px);
             box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); */
       }
+      &__create-assembly {
+            .search-results {
+                  display: none;
+                  background-color: #d3d1d1;
+                  border-radius: variables.$mainBorderRadius;
+                  left: 580px;
+                  z-index: 99 !important;
+            }
+      }
 }
 
 body.dark-theme .main-panel__body {
