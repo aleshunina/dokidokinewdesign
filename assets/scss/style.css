@@ -40,8 +40,6 @@ body.dark-theme {
   background-color: #F4F4F4;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  /* box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.4);
-  clip-path: inset( -100px 00px -100px -100px); */
 }
 @media (max-width: 420px) {
   .main-panel__body, body.dark-theme .main-panel__body {
@@ -54,15 +52,11 @@ body.dark-theme {
   min-height: 100%;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  /* box-shadow:  0rem 1rem 3rem rgba(black, .175); */
-  /* clip-path: inset( -100px -100px -100px 0px);
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5); */
 }
 .main-panel__create-assembly .search-results {
   display: none;
   background-color: #d3d1d1;
   border-radius: 15px;
-  left: 580px;
   z-index: 99 !important;
 }
 
