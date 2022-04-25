@@ -22,7 +22,12 @@
                   background-color: #d3d1d1;
                   border-radius: variables.$mainBorderRadius;
                   z-index: 99 !important;
-            }
+                  padding-left: 20px;
+                   @media (max-width: 420px) {
+                      width: 90%;
+                      
+              }
+                              }
       }
 }
 

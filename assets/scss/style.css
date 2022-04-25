@@ -58,6 +58,12 @@ body.dark-theme {
   background-color: #d3d1d1;
   border-radius: 15px;
   z-index: 99 !important;
+  padding-left: 20px;
+}
+@media (max-width: 420px) {
+  .main-panel__create-assembly .search-results {
+    width: 90%;
+  }
 }
 
 body.dark-theme .main-panel__body {
