@@ -8,7 +8,7 @@
             @media (max-width: 420px) {
                       border-radius: variables.$mainBorderRadius;
                       width: 90%;
-              }
+            }
       }
       &__img {
             object-fit: cover;
@@ -22,12 +22,17 @@
                   background-color: #d3d1d1;
                   border-radius: variables.$mainBorderRadius;
                   z-index: 99 !important;
-                  padding-left: 20px;
-                   @media (max-width: 420px) {
+                  @media (max-width: 420px) {
                       width: 90%;
-                      
-              }
-                              }
+                  }
+                  .search-result {
+                        padding-left: 15px;
+                        &:hover {
+                              border-radius: variables.$mainBorderRadius;
+                              background: linear-gradient(0deg, rgba(188,247,255,1) 0%, rgba(239,185,255,1) 100%);
+                        }
+                  }
+            }
       }
 }
 
@@ -35,4 +40,17 @@ body.dark-theme .main-panel__body {
       @extend .main-panel__body;
       background-color: #494d50;
       color: rgb(190, 190, 190);
+}
+
+body.dark-theme .search-results {
+      @extend .search-results;
+      background-color: #606468 !important;
+      color: rgb(190, 190, 190);
+      .search-result {
+            padding-left: 15px;
+            &:hover {
+                  border-radius: variables.$mainBorderRadius;
+                  background: linear-gradient(0deg, rgba(0,122,140,1) 0%, rgba(113,0,147,1) 100%);
+            }
+      }
 }
