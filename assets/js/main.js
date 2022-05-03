@@ -25,10 +25,12 @@ logo.addEventListener('click', function() {
 
 
  const searchResult = document.getElementsByClassName('search-result');
-if (searchResult.length == 3){
+if (searchResult.length > 1){
     searchResult[0].style.borderBottomLeftRadius = '0px';
     searchResult[0].style.borderBottomRightRadius = '0px';
-    searchResult[1].style.borderRadius = '0px';
-    searchResult[2].style.borderTopLeftRadius = '0px';
-    searchResult[2].style.borderTopRightRadius = '0px';
+    for (let i = 1; i <= searchResult.length - 2; i++) {
+        searchResult[i].style.borderRadius = '0px';
+       }
+    searchResult[searchResult.length -1].style.borderTopLeftRadius = '0px';
+    searchResult[searchResult.length -1].style.borderTopRightRadius = '0px';
 }
