@@ -24,7 +24,7 @@ logo.addEventListener('click', function() {
 
 
 
- const searchResult = document.getElementsByClassName('search-result');
+const searchResult = document.getElementsByClassName('search-result');
 if (searchResult.length > 1){
     searchResult[0].style.borderBottomLeftRadius = '0px';
     searchResult[0].style.borderBottomRightRadius = '0px';
@@ -33,4 +33,8 @@ if (searchResult.length > 1){
        }
     searchResult[searchResult.length -1].style.borderTopLeftRadius = '0px';
     searchResult[searchResult.length -1].style.borderTopRightRadius = '0px';
+}
+
+if (searchResult.length >= 4){
+    document.getElementsByClassName('search-results')[0].style.height = '50%'
 }
